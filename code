@@ -1,0 +1,30 @@
+package aur;
+
+import java.util.Scanner;
+
+public class aur {
+
+	 public static void main(String[] args){
+	 Scanner s = new Scanner(System.in);
+	   
+		String flower;
+		int individual, flowersDozen;
+	      System.out.println("Welcome");
+	      System.out.println("What kind of fower do you want to buy?");
+	      flower = s.next();
+	    
+	   if( flower.equalsIgnoreCase("Roses")){
+	    	System.out.println("How many dozens would you like?");
+	    	 Scanner keyboard = new Scanner(System.in);
+	    		flowersDozen = keyboard.nextInt();
+	    		individual = flowersDozen*12;
+	    		System.out.print("That is a total of " + individual + " roses.");
+	   
+
+	   }
+}
+}
+
+
+
+	 
