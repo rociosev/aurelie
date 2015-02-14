@@ -6,25 +6,35 @@ public class aur {
 
 	 public static void main(String[] args){
 	 Scanner s = new Scanner(System.in);
-	   
-		String flower;
+		String flower,name;
 		int individual, flowersDozen;
 	      System.out.println("Welcome");
 	      System.out.println("What kind of fower do you want to buy?");
 	      flower = s.next();
-	    
+	      
 	   if( flower.equalsIgnoreCase("Roses")){
 	    	System.out.println("How many dozens would you like?");
 	    	 Scanner keyboard = new Scanner(System.in);
 	    		flowersDozen = keyboard.nextInt();
 	    		individual = flowersDozen*12;
 	    		System.out.print("That is a total of " + individual + " roses.");
-	   
-
 	   }
+	   
+	   if( flower.equalsIgnoreCase("lilies")){
+	    	System.out.println("Who are the flowers for");
+	    		Scanner n = new Scanner(System.in);
+	    		name = n.next();
+	    		if(name.length()>5){
+	    			System.out.println("Sorry, long name");
+	    		}
+	    		else{
+	    			System.out.println("yay! Short name");
+	    			}
+	   		}
+	   	else{
+	    		System.out.println("Sorry, we do not carry that kind of flower in this shop.");
+	    	}
+
+	 System.out.println("Thank you for visiting our flower shop, hope to see you again!");
+	 }
 }
-}
-
-
-
-	 
