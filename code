@@ -9,7 +9,7 @@ public class aur {
 		String flower,name;
 		int individual, flowersDozen;
 	      System.out.println("Welcome");
-	      System.out.println("What kind of fower do you want to buy?");
+	      System.out.println("What kind of flower do you want to buy?");
 	      flower = s.next();
 	      
 	   if( flower.equalsIgnoreCase("Roses")){
